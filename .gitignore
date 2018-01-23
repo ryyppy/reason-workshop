@@ -19,9 +19,10 @@
 *.annot
 *.cmj
 *.bak
-lib/bs
+lib/
 *.mlast
 *.mliast
 .vscode
 .merlin
+src/my.re
 node_modules/

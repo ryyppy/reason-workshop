@@ -9,7 +9,9 @@ presentation slides.
 - [Reason Docs](https://reasonml.github.io/docs/en/quickstart-javascript.html)
 - [ReasonReact Docs](https://reasonml.github.io/reason-react/)
 - [BuckleScript Docs](https://bucklescript.github.io/docs/en/installation.html)
+- [Redex (BS library Index)](https://redex.github.io)
 - [Discord Channel](https://discord.gg/reasonml)
+
 
 ## Setup
 
