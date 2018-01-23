@@ -60,7 +60,7 @@ After running your BS compiler in the background, you will be able to
 play around with the examples with compiler warnings etc.
 
 
-### Extra Points: BuckleScript CLI
+### Extra: Install BuckleScript CLI
 
 BuckleScript also offers a CLI, called `bsb`. You can install it via npm:
 
@@ -68,8 +68,10 @@ BuckleScript also offers a CLI, called `bsb`. You can install it via npm:
 npm install -g bs-platform
 ```
 
-Later on for this workshop we need this tool to bootstrap add BS to an existing JS project... in every project you are required to add `bs-platform` as a
-devDependency, so usually it's not really necessary to have it installed.
+Later on for this workshop we need this tool to add BS to an existing
+JS project... in every project you are required to add `bs-platform`
+as a devDependency, so usually it's not really necessary to actually
+have it installed globally.
 
 ## Overview
 
