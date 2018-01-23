@@ -41,8 +41,6 @@ let isActuallyValidated = MyValidator.isValidated(validatedInt);
 
 /* Pattern Matching */
 
-let myMove = Left(10);
-
 switch(myMove) {
 | Up(distance) => Js.log({j|Walked $distance upwards|j})
 | Down(distance) => Js.log({j|Walked $distance downwards|j})
