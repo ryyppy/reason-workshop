@@ -91,6 +91,10 @@ some type / function signatures. Merlin will not pick up the changes
 right away, so quit the `yarn run bs:watch` process, run `yarn run
 bs:clean` and start the watch mode again.
 
+For the same reasons, sometimes file tabs of certain editors (VSCode)
+get out of sync with Merlin. Closing and reopening the files should
+help as well.
+
 **I get really confusing type errors and I don't know what to do**
 
 Having a type-system with strong type inference is usually very
