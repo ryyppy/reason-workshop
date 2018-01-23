@@ -13,5 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^2.1.0"
+  },
+  "dependencies": {
+    "reason-react": "^0.3.1"
   }
 }
