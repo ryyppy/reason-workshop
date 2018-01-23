@@ -1,0 +1,17 @@
+{
+  "name": "reason-workshop",
+  "version": "0.1.0",
+  "scripts": {
+    "bs:clean": "bsb -clean-world",
+    "bs:build": "bsb -make-world",
+    "bs:watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^2.1.0"
+  }
+}

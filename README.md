@@ -8,7 +8,7 @@ presentation slides.
 - [Reason Playground](https://reasonml.github.io/en/try.html)
 - [Reason Docs](https://reasonml.github.io/docs/en/quickstart-javascript.html)
 - [ReasonReact Docs](https://reasonml.github.io/reason-react/)
-- [BuckleScript Docs](https://bucklescript.github.io/)
+- [BuckleScript Docs](https://bucklescript.github.io/docs/en/installation.html)
 - [Discord Channel](https://discord.gg/reasonml)
 
 ## Setup
@@ -46,6 +46,7 @@ autocompletion
 ### Testing your setup
 
 ```sh
+# Tip: You probably enjoy this the best inside your Editor terminal
 # Install all project dependencies (+ the BuckleScript build system)
 yarn install
 
@@ -65,8 +66,7 @@ BuckleScript also offers a CLI, called `bsb`. You can install it via npm:
 npm install -g bs-platform
 ```
 
-For this workshop we might need this tool to bootstrap a blank
-project... in every project you are required to add `bs-platform` as a
+Later on for this workshop we need this tool to bootstrap add BS to an existing JS project... in every project you are required to add `bs-platform` as a
 devDependency, so usually it's not really necessary to have it installed.
 
 ## Overview
