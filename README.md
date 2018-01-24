@@ -26,7 +26,7 @@ troubles, please ask your workshop instructor for support.
 
 ```
 # On MacOS:
-npm install -g https://github.com/reasonml/reason-cli/archive/3.0.4-bin-darwin.tar.gz 
+npm install -g https://github.com/reasonml/reason-cli/archive/3.0.4-bin-darwin.tar.gz
 
 # On Linux:
 npm install -g https://github.com/reasonml/reason-cli/archive/3.0.4-bin-linux.tar.gz
