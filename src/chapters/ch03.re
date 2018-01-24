@@ -1,7 +1,4 @@
-
-/****************************/
-/*** INTEROP (BS)           */
-/****************************/
+/* Chapter 3: ReasonReact & Interop */
 
 /* Embed a raw function */
 
@@ -22,3 +19,6 @@ let root = dirname("/User/chenglou");
 [@bs.module "./student"] external studentName : string = "default";
 let fullname = "Hans " ++ studentName;
 
+/* Map global values */
+[@bs.val] external setTimeout : (unit => unit, int) => float = "setTimeout";
+[@bs.val] external clearTimeout : float => unit = "clearTimeout";
