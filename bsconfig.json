@@ -1,9 +1,12 @@
 {
   "name": "reason-workshop",
   "version": "0.1.0",
-  "reason": { "react-jsx": 2 },
-  "refmt": 3,
-  "bs-dependencies": [ "reason-react"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "bs-dependencies": [
+    "reason-react"
+  ],
   "sources": {
     "dir": "src",
     "subdirs": true
@@ -13,5 +16,8 @@
     "in-source": false
   },
   "suffix": ".bs.js",
-  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"]
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ]
 }
