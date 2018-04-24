@@ -66,7 +66,7 @@ type user = {
 type jsUser = {
   .
   "name": string,
-  "friendly": Js.boolean,
+  "friendly": bool,
 };
 
 /* Open JS object type */
