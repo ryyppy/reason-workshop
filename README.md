@@ -21,6 +21,15 @@ compile the examples.  After completing all steps, you should be able
 to see type-errors / autocompletion in your editor. If there are any
 troubles, please ask your workshop instructor for support.
 
+### Cleanup for older Reason installations
+
+If you have been using Reason a while ago, especially with VSCode, please uninstall any Reason / OCaml related plugins from your VSCode installation first.
+
+Please make sure to uninstall any existing `reason-cli` installations via `npm`:
+
+- `npm -g ls reason-cli` 
+- If the command above delivered results, please run: `npm -g remove reason-cli`
+
 ### Editor
 
 - Download [VSCode](https://code.visualstudio.com/)
