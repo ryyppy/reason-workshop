@@ -5,6 +5,7 @@ presentation slides.
 
 **Important Links:**
 
+- [Sketch.sh (Online REPL)](https://sketch.sh)
 - [Reason Playground](https://reasonml.github.io/en/try.html)
 - [Reason Docs](https://reasonml.github.io/docs/en/quickstart-javascript.html)
 - [ReasonReact Docs](https://reasonml.github.io/reason-react/)
@@ -22,41 +23,18 @@ troubles, please ask your workshop instructor for support.
 
 ### Editor
 
-**Install reason-cli ([Docs](https://reasonml.github.io/docs/en/global-installation.html#recommended-through-npm-yarn))**
-
-```
-# On MacOS:
-npm install -g reason-cli@3.1.0-darwin
-
-# On Linux:
-npm install -g reason-cli@3.1.0-linux
-
-# On Windows
-Please see https://github.com/reasonml/reasonml.github.io/issues/195
-
-# Verify your installation (command should yield this output)
-readlink `which ocamlmerlin refmt ocamlmerlin-reason`
-
-# Should output something similar like this:
-../lib/node_modules/reason-cli/.bin/ocamlmerlin
-../lib/node_modules/reason-cli/.bin/refmt
-../lib/node_modules/reason-cli/.bin/ocamlmerlin-reason
-```
-
-After that, install your **editor plugin** for syntax-highlighting and
-autocompletion
-([Docs](https://reasonml.github.io/docs/en/editor-plugins.html#officially-supported-editors))**
-
+- Download [VSCode](https://code.visualstudio.com/)
+- Install VSCode plugin: [vscode-reason-language-server](https://marketplace.visualstudio.com/items?itemName=jaredly.reason-vscode#overview) by **Jared Forsyth**
 
 ### Testing your setup
 
 ```sh
-# Tip: You probably enjoy this the best inside your Editor terminal
 # Install all project dependencies (+ the BuckleScript build system)
-yarn install
+npm install
 
-# Open new tab and run the BuckleScript compiler in watch mode
-yarn run bs:watch
+# It's recommended to run this command in your editor terminal
+# (easier to see the compiler output next to the code)
+npm run bs:watch
 ```
 
 After running your BS compiler in the background, you will be able to
@@ -83,24 +61,17 @@ have it installed globally.
 
 ## Glossar
 
-- **Merlin** - Merlin is your editor helper process to give you code-completion & type information
 - **BuckleScript** - The Reason-to-JS compiler platform used in this workshop
 - **refmt** - The Reason pretty-printer used for reformatting code in your editor ("Prettier for reason")
-- **rtop** - The Reason REPL (interesting for running Reason code interactively in your terminal)
 - **Interop** - This refers to the interoperability layer in **BuckleScript**
 
 ## Tips & Tricks
 
 **Bucklescript builds the code without any warnings, but my editor still complains about type errors**
 
-This usually happens if you are building a module and later on change
-some type / function signatures. Merlin will not pick up the changes
-right away, so quit the `yarn run bs:watch` process, run `yarn run
-bs:clean` and start the watch mode again.
+Sometimes it happens that VSCode gets out of sync with the backing Language Server process and it reports type errors which are actually not there (e.g. caused by moving files around etc).
 
-For the same reasons, sometimes file tabs of certain editors (VSCode)
-get out of sync with Merlin. Closing and reopening the files should
-help as well.
+Always check the output of your BuckleScript process first. If BuckleScript doesn't yield any errors, then try closing tabs / saving all relevant files and reopen them to sync up the error reporting.
 
 **I get really confusing type errors and I don't know what to do**
 

@@ -22,7 +22,7 @@ let make = (_children) => {
     let onClick = (_event) => self.send(Click);
     let onReset = (_event) => self.send(Reset);
     <div>
-      {ReasonReact.stringToElement(message)}
+      {ReasonReact.string(message)}
       <ClickerForm onClick onReset />
     </div>
   }

@@ -4,12 +4,10 @@ type someRecord = {
   good: bool,
 };
 
-
 /****************/
-
 /*** DATA TYPES */
-
 /****************/
+
 /* unit */
 let nothing = ();
 
@@ -39,12 +37,10 @@ let someAnnotated: string = "";
 /* Some record (needs type definition of given record) */
 let someRecord = {test: "test", good: true};
 
-
 /********************/
-
 /*** DEFINING TYPES */
-
 /********************/
+
 type aa = int;
 
 type bb = string;
@@ -72,24 +68,20 @@ type jsUser = {
 /* Open JS object type */
 type openUser('a) = {.. "fullname": string} as 'a;
 
-
 /*****************************/
-
 /*** MUTABLE RECORD REF TYPE */
-
 /*****************************/
+
 let mutInt = ref(1);
 
 mutInt := 3;
 
 let readMut = mutInt^;
 
-
 /********************/
-
 /*** VARIANTS       */
-
 /********************/
+
 /* This is a variant type `color` with 3 tags */
 type color =
   | Red
@@ -113,33 +105,27 @@ type movement =
 /* When we want to use `Up`, we need to provide a value */
 let myMove = Up(10);
 
-
 /***************************/
-
 /*** VARIANTS: OPTION TYPE */
-
 /***************************/
+
 let maybeString = Some("test");
 
 let notAString = None;
 
-
 /***************************/
-
 /*** VARIANTS: REF TYPE    */
-
 /***************************/
+
 /* This defines a mutable value of type ref('a) */
 let mutti = ref(1);
 
 mutti.contents;
 
-
 /**************/
-
 /*** MODULES  */
-
 /**************/
+
 module MyValidator = {
   type t('a) =
     | Validated('a)
@@ -153,12 +139,10 @@ let validatedInt = MyValidator.validate(1);
 
 let isActuallyValidated = MyValidator.isValidated(validatedInt);
 
-
 /**********************/
-
 /*** PATTERN MATCHING */
-
 /**********************/
+
 let lamp =
   switch (1) {
   | 0 => "off"

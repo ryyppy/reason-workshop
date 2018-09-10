@@ -1,10 +1,9 @@
 /* Chapter 2: Functions & Currying */
 
 /****************************/
-
 /*** FUNCTION VALUE & TYPES */
-
 /****************************/
+
 /* A function is just a value */
 let add = (a, b) => a + b;
 
@@ -20,10 +19,9 @@ let addFloat: genericAdd(float) = (a, b) => a +. b;
 
 
 /****************************/
-
 /*** CURRYING & APPLICATION */
-
 /****************************/
+
 /* We bind the first argument (a) to 3, which
    will return a new function (int) => int called add3 */
 let add3 = add(3);
@@ -37,10 +35,9 @@ add3(2);
    */
 
 /****************************/
-
 /*** LABELED FUNCTIONS      */
-
 /****************************/
+
 /* One labeled argument, all parameters required */
 let processFilepath = (~ext, filepath: string) : string =>
   filepath ++ "." ++ ext;
@@ -63,8 +60,8 @@ runProcessFullPath();
 
 /*******************************/
 /* Pipe Operator / Composition */
-
 /*******************************/
+
 let convertMtoF = ch =>
   switch (ch) {
   | 'M' => 'F'

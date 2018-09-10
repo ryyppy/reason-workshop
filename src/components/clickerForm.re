@@ -2,7 +2,7 @@
 
 let component = ReasonReact.statelessComponent("ClickerForm");
 
-let s = ReasonReact.stringToElement;
+let s = ReasonReact.string;
 
 let make = (~onClick, ~onReset, _children) => {
   ...component,
