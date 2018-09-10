@@ -35,20 +35,22 @@ Please make sure to uninstall any existing `reason-cli` installations via `npm`:
 - Download [VSCode](https://code.visualstudio.com/)
 - Install VSCode plugin: [reason-vscode](https://marketplace.visualstudio.com/items?itemName=jaredly.reason-vscode#overview) by **Jared Forsyth**
 
-### Testing your setup
+You can find a more descriptive article on my development workflow with VSCode [right here](https://medium.com/@ryyppy/a-quick-look-on-my-reasonml-workflow-with-vscode-637685f9417a).
+
+### Building the project
+
+Make sure to run `npm install` before trying to build the source.
 
 ```sh
-# Install all project dependencies (+ the BuckleScript build system)
-npm install
+# For a single build run
+npm run bs:build
 
-# It's recommended to run this command in your editor terminal
-# (easier to see the compiler output next to the code)
+# For watch mode building (recommended to run in your VSCode terminal so
+# it's easier to see the compiler output next to the code)
 npm run bs:watch
 ```
 
-After running your BS compiler in the background, you will be able to
-play around with the examples with compiler warnings etc.
-
+Note: If you don't do an initial build before using your editor, you will see a lot of error messages. This is because there aren't any build artifacts to inspect for the plugin. So make sure to run the watch mode before coding.
 
 ### Extra: Install BuckleScript CLI
 
