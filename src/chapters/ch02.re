@@ -77,3 +77,7 @@ let result =
   "moo" |> String.capitalize |> String.map(convertMtoF) |> repeatString(2);
 
 let repeatFoo3times = 3 |> repeatString(_, "foo");
+
+/* Equivalent: Fast-Pipe operator to inject the left side value as the
+   first position parameter of the right side function: */
+let repeatFoo3times_fastpipe = 3->repeatString("foo");
