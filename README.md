@@ -33,7 +33,7 @@ Please make sure to uninstall any existing `reason-cli` installations via `npm`:
 ### Editor
 
 - Download [VSCode](https://code.visualstudio.com/)
-- Install VSCode plugin: [vscode-reason-language-server](https://marketplace.visualstudio.com/items?itemName=jaredly.reason-vscode#overview) by **Jared Forsyth**
+- Install VSCode plugin: [reason-vscode](https://marketplace.visualstudio.com/items?itemName=jaredly.reason-vscode#overview) by **Jared Forsyth**
 
 ### Testing your setup
 
