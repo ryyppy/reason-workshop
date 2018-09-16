@@ -1,5 +1,7 @@
 # reason-workshop
 
+> Revision: 1.3 
+
 This repository contains all the code snippets & examples used in the
 presentation slides.
 
