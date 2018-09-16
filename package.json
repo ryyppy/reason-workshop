@@ -2,9 +2,9 @@
   "name": "reason-workshop",
   "version": "0.1.0",
   "scripts": {
-    "bs:clean": "bsb -clean-world",
-    "bs:build": "bsb -make-world",
-    "bs:watch": "bsb -make-world -w"
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
   },
   "keywords": [
     "BuckleScript"

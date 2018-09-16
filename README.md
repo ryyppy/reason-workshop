@@ -43,11 +43,12 @@ Make sure to run `npm install` before trying to build the source.
 
 ```sh
 # For a single build run
-npm run bs:build
+npm run build
+
 
 # For watch mode building (recommended to run in your VSCode terminal so
 # it's easier to see the compiler output next to the code)
-npm run bs:watch
+npm run watch
 ```
 
 Note: If you don't do an initial build before using your editor, you will see a lot of error messages. This is because there aren't any build artifacts to inspect for the plugin. So make sure to run the watch mode before coding.

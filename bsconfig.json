@@ -1,16 +1,20 @@
 {
   "name": "reason-workshop",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "refmt": 3,
   "reason": {
     "react-jsx": 2
   },
   "bs-dependencies": [
     "reason-react"
   ],
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    ".solutions"
+  ],
   "package-specs": {
     "module": "commonjs",
     "in-source": false
