@@ -3,6 +3,8 @@
 This repository contains all the code snippets & examples used in the
 presentation slides.
 
+For the accompanied exercise repository for ReasonReact, clone and `npm install` [reason-workshop-exercise](https://github.com/ryyppy/reason-workshop-exercise).
+
 **Important Links:**
 
 - [Sketch.sh (Online REPL)](https://sketch.sh)
