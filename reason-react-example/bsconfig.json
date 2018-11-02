@@ -1,0 +1,30 @@
+{
+  "name": "antwar-default",
+  "namespace": true,
+  "reason": { "react-jsx": 2 },
+  "refmt": 3,
+  "bs-dependencies": ["reason-react"],
+  "sources": [
+    "common",
+    // "templates",
+    { "dir": "pages", "subdirs": true },
+    { "dir": "components", "subdirs": true },
+    "utils",
+    "layouts",
+    { "dir": "bindings", "subdirs": true },
+    /*     ,{
+      "dir": ".",
+      "files": [""]                    
+    } */
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors", "-bs-g"],
+  "gentypeconfig": {
+    "language" : "untyped",
+    "shims": []
+  }
+}

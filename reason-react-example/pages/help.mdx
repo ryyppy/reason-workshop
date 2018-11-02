@@ -1,0 +1,36 @@
+import Counter from "../components/Counter";
+import Interactive from "antwar-interactive";
+import ReCounter from "../components/ReCounter.re.js";
+
+# Help
+
+Here are some hints on how to work with this Antwar setup.
+
+- Edit `antwar.config.js` to add routes
+- Edit `webpack.config.js` to modify webpack behavior
+
+## Interactive Components
+
+Whenever you want to use a stateful (Reason)React component, you need to use an
+Interactive component to mark them as separate build units. Antwar will detect
+given components, build separate bundles and hooks them up via script injection.
+
+**This is a JS based Counter:**
+
+<Interactive id="components/Counter.js" component={Counter} count={5} />
+
+**This is a Reason based Counter:**
+<Interactive id="components/ReCounter.re.js" component={ReCounter} count={5} />
+
+## Smoke Testing Production builds
+
+Use `npm run build` or `npm run clean-build` (clean-build doesn't work on Windows yet) to build your project. For easy
+testing on your local machine, you can do:
+
+```sh
+cd build/
+python -m SimpleHTTPServer 8000
+```
+
+Now you can access your built website on `localhost:8000`. This is the
+actual build you also deploy on your hosting server.

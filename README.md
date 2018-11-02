@@ -5,7 +5,9 @@
 This repository contains all the code snippets & examples used in the
 presentation slides.
 
-For the accompanied exercise repository for ReasonReact, clone and `npm install` [reason-workshop-exercise](https://github.com/ryyppy/reason-workshop-exercise).
+Also this project contains a subproject for the ReasonReact exercise, which is located in [reason-react-example](reason-react-example).
+
+Please do a `cd reason-react-example` and `npm install` in there as well.
 
 **Important Links:**
 
@@ -56,19 +58,6 @@ npm run watch
 ```
 
 Note: If you don't do an initial build before using your editor, you will see a lot of error messages. This is because there aren't any build artifacts to inspect for the plugin. So make sure to run the watch mode before coding.
-
-### Extra: Install BuckleScript CLI
-
-BuckleScript also offers a CLI, called `bsb`. You can install it via npm:
-
-```
-npm install -g bs-platform
-```
-
-Later on for this workshop we need this tool to add BS to an existing
-JS project... in every project you are required to add `bs-platform`
-as a devDependency, so usually it's not really necessary to actually
-have it installed globally.
 
 ## Overview
 
